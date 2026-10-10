@@ -1,0 +1,33 @@
+---
+labels: ['module', templates, starters]
+description: 'React workspace starters'
+---
+
+Starters for building React applications and components.
+
+Features:
+
+- Full stack React app.
+- Static React app.
+
+## Use in your env
+
+You can compose the starters into your dev environment:
+
+```ts
+class MyEnv {
+  starters() {
+    return StarterList.from([
+      ReactWorkspaceStarter.from()
+    ]);
+  }
+}
+```
+
+## Fork the starters
+
+You can fork the starters and customize them for your own needs. To fork the starters run the following command:
+
+```
+bit fork bitdev.react/generators/react-starters
+```

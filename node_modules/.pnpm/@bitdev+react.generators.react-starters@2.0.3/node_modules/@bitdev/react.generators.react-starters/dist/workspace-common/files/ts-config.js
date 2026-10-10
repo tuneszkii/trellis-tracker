@@ -1,0 +1,19 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.tsConfig = void 0;
+exports.tsConfig = `/**
+ * this is NOT the config for your components.
+ * it is only used by your IDE, for a better development experience.
+ * to change your component compilation, customize your env.
+ * @see https://bit.dev/reference/typescript/typescript-config
+ */
+{
+  "extends": "./node_modules/@teambit/react.react-env/config/tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true
+  },
+  "exclude": [
+    "dist"
+  ]
+}`;
+//# sourceMappingURL=ts-config.js.map

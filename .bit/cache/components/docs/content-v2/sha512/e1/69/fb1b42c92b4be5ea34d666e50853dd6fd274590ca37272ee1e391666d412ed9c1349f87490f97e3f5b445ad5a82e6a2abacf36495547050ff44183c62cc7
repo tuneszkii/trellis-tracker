@@ -1,0 +1,1 @@
+[{"filePath":"app-shell.tsx","name":"AppShell","description":"App frame: navigation rail (sidebar on tablet/desktop, collapsible top bar on mobile)\nplus a main content area where each screen renders.","properties":[{"name":"children","description":"","required":true,"type":"ReactNode"}],"access":"public","methods":[],"args":[],"examples":[]}]

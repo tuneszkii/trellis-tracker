@@ -1,0 +1,1 @@
+{"version":3,"file":"tsconfig-not-found.js","sourceRoot":"","sources":["../../exceptions/tsconfig-not-found.ts"],"names":[],"mappings":";;;AAAA,kDAA8C;AAE9C,MAAa,gBAAiB,SAAQ,oBAAQ;IAC5C,YAAY,QAA4B;QACtC,MAAM,OAAO,GAAG,QAAQ,CAAC,CAAC,CAAC,OAAO,QAAQ,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC;QAClD,KAAK,CACH,qBAAqB,OAAO;2FACyD,CACtF,CAAC;IACJ,CAAC;CACF;AARD,4CAQC"}

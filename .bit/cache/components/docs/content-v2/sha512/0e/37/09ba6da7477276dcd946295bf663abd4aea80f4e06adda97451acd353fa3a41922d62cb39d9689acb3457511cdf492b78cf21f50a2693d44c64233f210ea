@@ -1,0 +1,1 @@
+[{"name":"","description":"Trellis — a project tracker where checking off tasks rolls progress up\nto areas and to the whole project. Each view is its own screen:\nDashboard, Project overview, Checklist, Area focus and New project.","args":[],"returns":{},"access":"public","examples":[],"render":"","properties":[],"static":false,"filePath":"trellis-app.tsx"}]

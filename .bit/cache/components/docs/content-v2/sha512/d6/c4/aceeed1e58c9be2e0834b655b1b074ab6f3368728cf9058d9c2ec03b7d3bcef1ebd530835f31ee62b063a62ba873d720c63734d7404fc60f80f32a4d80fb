@@ -1,0 +1,1 @@
+[{"name":"","description":"Area focus frame: one area of a project (e.g. \"Gun system\").\nIts tasks are shown as flat sections — direct tasks, then one section per\nsub-group — so there is never more than one level to read through.","args":[],"returns":{},"access":"public","examples":[],"render":"","properties":[],"static":false,"filePath":"area-page.tsx"}]

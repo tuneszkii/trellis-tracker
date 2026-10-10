@@ -1,0 +1,22 @@
+import { Platform } from '@bitdev/platforms.platform';
+
+const PlatformGateway = import.meta.resolve('@bitdev/platforms.backend.gateway-server');
+const TrellisApp = import.meta.resolve('@tuneszkiiii25/trellis.trellis-app');
+const TrellisService = import.meta.resolve('@tuneszkiiii25/trellis.trellis-service');
+
+export const TrellisPlatform = Platform.from({
+  name: 'trellis-platform',
+
+  frontends: {
+    main: TrellisApp,
+    mainPortRange: [3000, 3100],
+  },
+
+  backends: {
+    // default gateway — proxies REST and composes GraphQL subgraphs.
+    main: PlatformGateway,
+    services: [TrellisService],
+  },
+});
+
+export default TrellisPlatform;

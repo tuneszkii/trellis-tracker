@@ -1,0 +1,1 @@
+[{"name":"","description":"New project frame: name, description, color and optional starter areas\n(one per line) so the project structure exists from the start.","args":[],"returns":{},"access":"public","examples":[],"render":"","properties":[],"static":false,"filePath":"new-project-page.tsx"}]

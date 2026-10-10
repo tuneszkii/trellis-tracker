@@ -1,0 +1,87 @@
+import express from 'express';
+import mongoose from 'mongoose';
+import { TrellisService } from "./trellis-service.js";
+
+export async function run() {
+  const app = express();
+  const trellisService = TrellisService.from();
+  const port = process.env.PORT || 3000;
+
+  if (process.env.MONGO_URL) {
+    await mongoose.connect(process.env.MONGO_URL);
+    await trellisService.seed();
+  } else {
+    console.warn('MONGO_URL is not set — database unavailable');
+  }
+
+  app.use(express.json({ limit: '4mb' }));
+
+  app.get('/', (_req, res) => {
+    res.json({ message: 'trellis service ok' });
+  });
+
+  app.get('/projects', async (_req, res) => {
+    try {
+      res.json(await trellisService.listProjects());
+    } catch (e: any) {
+      res.status(500).json({ message: e.message });
+    }
+  });
+
+  app.get('/projects/:id', async (req, res) => {
+    const project = await trellisService.getProject(req.params.id);
+    if (!project) return res.status(404).json({ message: 'Project not found' });
+    return res.json(project);
+  });
+
+  app.post('/projects', async (req, res) => {
+    try {
+      res.status(201).json(await trellisService.createProject(req.body || {}));
+    } catch (e: any) {
+      res.status(400).json({ message: e.message });
+    }
+  });
+
+  app.put('/projects/:id', async (req, res) => {
+    const project = await trellisService.updateProject(req.params.id, req.body || {});
+    if (!project) return res.status(404).json({ message: 'Project not found' });
+    return res.json(project);
+  });
+
+  app.delete('/projects/:id', async (req, res) => {
+    const ok = await trellisService.deleteProject(req.params.id);
+    if (!ok) return res.status(404).json({ message: 'Project not found' });
+    return res.status(204).end();
+  });
+
+  // pictures: logos and card covers
+  app.post('/images', async (req, res) => {
+    try {
+      const id = await trellisService.saveImage(req.body?.dataUrl);
+      res.status(201).json({ id });
+    } catch (e: any) {
+      res.status(400).json({ message: e.message });
+    }
+  });
+
+  app.get('/images/:id', async (req, res) => {
+    const image = await trellisService.getImage(req.params.id);
+    if (!image) return res.status(404).json({ message: 'Image not found' });
+    res.set('Content-Type', image.contentType);
+    res.set('Cache-Control', 'public, max-age=31536000, immutable');
+    return res.send(image.data);
+  });
+
+  const server = app.listen(port, () => {
+    console.log(`🚀  Server ready at: http://localhost:${port}`);
+  });
+
+  return {
+    port,
+    // implement stop to support HMR.
+    stop: async () => {
+      server.closeAllConnections();
+      server.close();
+    }
+  };
+}

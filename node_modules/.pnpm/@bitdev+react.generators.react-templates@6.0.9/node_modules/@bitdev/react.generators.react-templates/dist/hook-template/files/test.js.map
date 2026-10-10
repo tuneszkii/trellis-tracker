@@ -1,0 +1,1 @@
+{"version":3,"file":"test.js","sourceRoot":"","sources":["../../../hook-template/files/test.ts"],"names":[],"mappings":";;;AAEO,MAAM,QAAQ,GAAG,CAAC,OAAyB,EAAE,EAAE;IACpD,MAAM,EAAE,IAAI,EAAE,aAAa,EAAE,GAAG,OAAO,CAAC;IAExC,OAAO;QACL,YAAY,EAAE,GAAG,IAAI,WAAW;QAChC,OAAO,EAAE;WACF,aAAa,cAAc,IAAI;;;wCAGF,aAAa;;;;;;;;CAQpD;KACE,CAAC;AACJ,CAAC,CAAC;AAnBW,QAAA,QAAQ,YAmBnB"}

@@ -1,0 +1,59 @@
+---
+labels: ['module', 'tester', 'vitest']
+description: 'A Vitest tester'
+---
+
+A Vitest tester for Bit. 
+
+Use this to test your components using the [Vitest](https://vitest.dev/) in your dev environment:
+
+```ts
+import { ReactEnv } from '@bitdev/react.react-env';
+import { VitestTester } from '@teambit/vite.vitest-tester';
+
+class MyEnv extends ReactEnv {
+  tester() {
+    return (
+      VitestTester.from({
+        config: require.resolve('./config/vitest.config.js')
+      });
+    );
+  }
+}
+```
+
+If you don't have a Bit dev environment, see a guide for [creating your dev environment](https://bit.dev/docs/getting-started/composing/dev-environments).
+
+## Add to your build pipeline
+
+Use the Mocha task to test your components during build:
+
+```ts
+import { ReactEnv } from '@bitdev/react.react-env';
+import { VitestTask } from '@teambit/vite.vitest-tester';
+import { Pipeline } from '@teambit/builder';
+
+class MyEnv extends ReactEnv {
+  build() {
+    return Pipeline.from([
+      // your other tasks...
+      VitestTask.from({
+        config: require.resolve('./config/vitest.config.js'),
+      }),
+    ]);
+  }
+}
+```
+
+## Learn more
+Learn more on Component testing in Bit:
+
+- [Running component tests](https://bit.dev/reference/testing/tester-overview)
+- [Generating coverage reports](https://bit.dev/reference/testing/tester-overview#test-with-coverage-report)
+
+## Contributing
+
+We welcome contributions to our components. Learn how to [propose a change request with your changes](https://bit.dev/reference/change-requests/building-lanes)
+
+## License 
+Apache 2.0 license.

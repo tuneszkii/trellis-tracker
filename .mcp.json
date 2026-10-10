@@ -1,0 +1,1 @@
+{"mcpServers":{"bit-cloud":{"type":"http","url":"https://mcp.bit.cloud/mcp","headers":{"Authorization":"Bearer ${BIT_CONFIG_USER_TOKEN}"}}}}

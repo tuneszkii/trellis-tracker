@@ -1,0 +1,139 @@
+2026-10-10T18:32:59.386Z 338 start -p 3000 --use-source, started
+2026-10-10T18:32:59.771Z 376 templates, started
+2026-10-10T18:32:59.886Z 376 templates, succeeded
+2026-10-10T18:33:03.269Z 493 status --json, started
+2026-10-10T18:33:03.298Z 493 status --json, succeeded
+2026-10-10T18:33:04.123Z 516 create platform trellis-platform, started
+2026-10-10T18:33:07.178Z 566 ls --json, started
+2026-10-10T18:33:07.180Z 585 mini-status --json, started
+2026-10-10T18:33:07.234Z 585 mini-status --json, succeeded
+2026-10-10T18:33:07.260Z 566 ls --json, succeeded
+2026-10-10T18:33:41.822Z 516 create platform trellis-platform, succeeded
+2026-10-10T18:33:44.722Z 890 create react-app trellis-app, started
+2026-10-10T18:33:47.907Z 934 mini-status --json, started
+2026-10-10T18:33:47.909Z 946 ls --json, started
+2026-10-10T18:33:47.975Z 934 mini-status --json, succeeded
+2026-10-10T18:33:47.985Z 946 ls --json, succeeded
+2026-10-10T18:33:59.541Z 890 create react-app trellis-app, succeeded
+2026-10-10T18:34:01.909Z 1216 create express-server trellis-service, started
+2026-10-10T18:34:05.502Z 1293 mini-status --json, started
+2026-10-10T18:34:05.550Z 1292 ls --json, started
+2026-10-10T18:34:05.571Z 1293 mini-status --json, succeeded
+2026-10-10T18:34:05.619Z 1292 ls --json, succeeded
+2026-10-10T18:34:14.010Z 1216 create express-server trellis-service, succeeded
+2026-10-10T18:34:51.776Z 1658 install mongoose, started
+2026-10-10T18:34:54.575Z 1709 mini-status --json, started
+2026-10-10T18:34:54.623Z 1709 mini-status --json, succeeded
+2026-10-10T18:34:55.405Z 1745 ls --json, started
+2026-10-10T18:34:55.471Z 1745 ls --json, succeeded
+2026-10-10T18:35:01.168Z 1658 install mongoose, succeeded
+2026-10-10T18:35:39.098Z 2147 mini-status --json, started
+2026-10-10T18:35:39.138Z 2145 ls --json, started
+2026-10-10T18:35:39.151Z 2147 mini-status --json, succeeded
+2026-10-10T18:35:39.211Z 2145 ls --json, succeeded
+2026-10-10T18:35:44.076Z 2255 mini-status --json, started
+2026-10-10T18:35:44.124Z 2255 mini-status --json, succeeded
+2026-10-10T18:35:44.183Z 2274 ls --json, started
+2026-10-10T18:35:44.257Z 2274 ls --json, succeeded
+2026-10-10T18:36:52.647Z 2494 mini-status --json, started
+2026-10-10T18:36:52.714Z 2494 mini-status --json, succeeded
+2026-10-10T18:36:52.720Z 2482 ls --json, started
+2026-10-10T18:36:52.800Z 2482 ls --json, succeeded
+2026-10-10T18:37:32.599Z 2688 ls --json, started
+2026-10-10T18:37:32.602Z 2707 mini-status --json, started
+2026-10-10T18:37:32.673Z 2707 mini-status --json, succeeded
+2026-10-10T18:37:32.674Z 2688 ls --json, succeeded
+2026-10-10T18:37:57.712Z 2880 mini-status --json, started
+2026-10-10T18:37:57.758Z 2878 ls --json, started
+2026-10-10T18:37:57.762Z 2880 mini-status --json, succeeded
+2026-10-10T18:37:57.822Z 2878 ls --json, succeeded
+2026-10-10T18:37:59.352Z 2938 check-types, started
+2026-10-10T18:38:01.610Z 2938 check-types, succeeded
+2026-10-10T18:38:09.061Z 3048 run trellis-platform -p 3001, started
+2026-10-10T18:38:16.552Z 3472 compile, started
+2026-10-10T18:38:19.057Z 3472 compile, succeeded
+2026-10-10T18:38:26.566Z 3577 run trellis-platform -p 3001, started
+2026-10-10T18:38:49.878Z 3843 validate, started
+2026-10-10T18:39:05.732Z 3843 validate, failed
+2026-10-10T18:39:13.248Z 4082 mini-status --json, started
+2026-10-10T18:39:13.274Z 4083 ls --json, started
+2026-10-10T18:39:13.304Z 4082 mini-status --json, succeeded
+2026-10-10T18:39:13.366Z 4083 ls --json, succeeded
+2026-10-10T18:39:18.219Z 4198 mini-status --json, started
+2026-10-10T18:39:18.270Z 4198 mini-status --json, succeeded
+2026-10-10T18:39:18.317Z 4217 ls --json, started
+2026-10-10T18:39:18.400Z 4217 ls --json, succeeded
+2026-10-10T18:39:18.913Z 4255 validate, started
+2026-10-10T18:39:32.645Z 4255 validate, failed
+2026-10-10T18:39:38.234Z 4558 mini-status --json, started
+2026-10-10T18:39:38.325Z 4558 mini-status --json, succeeded
+2026-10-10T18:39:38.327Z 4559 ls --json, started
+2026-10-10T18:39:38.442Z 4559 ls --json, succeeded
+2026-10-10T18:39:39.089Z 4603 validate, started
+2026-10-10T18:39:52.369Z 4603 validate, succeeded
+2026-10-10T18:40:01.169Z 4852 run trellis-platform -p 3001, started
+2026-10-10T18:40:21.942Z 5091 mini-status --json, started
+2026-10-10T18:40:21.991Z 5091 mini-status --json, succeeded
+2026-10-10T18:40:21.993Z 5092 ls --json, started
+2026-10-10T18:40:22.080Z 5092 ls --json, succeeded
+2026-10-10T18:43:12.906Z 5227 status --json, started
+2026-10-10T18:43:15.274Z 5227 status --json, succeeded
+2026-10-10T18:46:05.813Z 5426 mini-status --json, started
+2026-10-10T18:46:05.867Z 5426 mini-status --json, succeeded
+2026-10-10T18:46:05.877Z 5445 ls --json, started
+2026-10-10T18:46:05.959Z 5445 ls --json, succeeded
+2026-10-10T18:46:40.412Z 5630 ls --json, started
+2026-10-10T18:46:40.426Z 5649 mini-status --json, started
+2026-10-10T18:46:40.483Z 5649 mini-status --json, succeeded
+2026-10-10T18:46:40.503Z 5630 ls --json, succeeded
+2026-10-10T18:46:43.590Z 5775 mini-status --json, started
+2026-10-10T18:46:43.642Z 5775 mini-status --json, succeeded
+2026-10-10T18:46:43.661Z 5781 ls --json, started
+2026-10-10T18:46:43.738Z 5781 ls --json, succeeded
+2026-10-10T18:48:01.382Z 5943 mini-status --json, started
+2026-10-10T18:48:01.449Z 5943 mini-status --json, failed
+2026-10-10T18:48:01.529Z 5962 ls --json, started
+2026-10-10T18:48:01.630Z 5962 ls --json, succeeded
+2026-10-10T18:48:57.030Z 6249 ls --json, started
+2026-10-10T18:48:57.122Z 6249 ls --json, succeeded
+2026-10-10T18:48:57.461Z 6292 mini-status --json, started
+2026-10-10T18:48:57.516Z 6292 mini-status --json, succeeded
+2026-10-10T18:48:59.171Z 6354 check-types, started
+2026-10-10T18:49:01.857Z 6354 check-types, succeeded
+2026-10-10T18:49:21.498Z 6545 mini-status --json, started
+2026-10-10T18:49:21.539Z 6543 ls --json, started
+2026-10-10T18:49:21.553Z 6545 mini-status --json, succeeded
+2026-10-10T18:49:21.626Z 6543 ls --json, succeeded
+2026-10-10T18:49:43.584Z 6672 validate, started
+2026-10-10T18:49:57.318Z 6672 validate, succeeded
+2026-10-10T18:50:04.025Z 6889 test trellis-app, started
+2026-10-10T18:50:04.697Z 6927 mini-status --json, started
+2026-10-10T18:50:04.750Z 6927 mini-status --json, succeeded
+2026-10-10T18:50:04.760Z 6921 ls --json, started
+2026-10-10T18:50:04.845Z 6921 ls --json, succeeded
+2026-10-10T18:50:07.537Z 6889 test trellis-app, succeeded
+2026-10-10T19:08:45.220Z 7255 server --compile, started
+2026-10-10T19:09:12.023Z 7648 server --compile, started
+2026-10-10T19:09:15.803Z 7755 get-deps tuneszkiiii25.trellis/trellis-app,tuneszkiiii25.trellis/trellis-platform,tuneszkiiii25.trellis/trellis-service --json -c, started
+2026-10-10T19:09:17.939Z 7755 get-deps tuneszkiiii25.trellis/trellis-app,tuneszkiiii25.trellis/trellis-platform,tuneszkiiii25.trellis/trellis-service --json -c, succeeded
+2026-10-10T19:11:43.302Z 7857 mini-status --json, started
+2026-10-10T19:11:43.355Z 7857 mini-status --json, succeeded
+2026-10-10T19:11:43.926Z 7648 server --compile, started
+2026-10-10T19:14:54.336Z 8312 mini-status --json, started
+2026-10-10T19:14:54.401Z 8312 mini-status --json, succeeded
+2026-10-10T19:17:54.083Z 8870 mini-status --json, started
+2026-10-10T19:17:54.145Z 8870 mini-status --json, succeeded
+2026-10-10T19:18:21.356Z 9027 check-types, started
+2026-10-10T19:18:22.024Z 9069 mini-status --json, started
+2026-10-10T19:18:22.075Z 9069 mini-status --json, succeeded
+2026-10-10T19:18:24.006Z 9027 check-types, succeeded
+2026-10-10T19:18:28.008Z 9195 compile, started
+2026-10-10T19:18:30.682Z 9195 compile, succeeded
+2026-10-10T19:18:37.013Z 9307 run trellis-platform -p 3001, started
+2026-10-10T19:20:12.242Z 9684 validate, started
+2026-10-10T19:20:26.250Z 9684 validate, succeeded
+2026-10-10T19:43:16.620Z 10129 server --compile, started
+2026-10-10T19:55:42.401Z 10362 get-deps tuneszkiiii25.trellis/trellis-app,tuneszkiiii25.trellis/trellis-platform,tuneszkiiii25.trellis/trellis-service --json -c, started
+2026-10-10T19:55:42.522Z 10385 status --json, started
+2026-10-10T19:55:44.649Z 10362 get-deps tuneszkiiii25.trellis/trellis-app,tuneszkiiii25.trellis/trellis-platform,tuneszkiiii25.trellis/trellis-service --json -c, succeeded
+2026-10-10T19:55:45.020Z 10385 status --json, succeeded

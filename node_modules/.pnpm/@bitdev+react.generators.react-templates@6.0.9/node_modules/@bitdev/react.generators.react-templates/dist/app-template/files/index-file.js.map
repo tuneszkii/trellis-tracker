@@ -1,0 +1,1 @@
+{"version":3,"file":"index-file.js","sourceRoot":"","sources":["../../../app-template/files/index-file.ts"],"names":[],"mappings":";;;AAEO,MAAM,SAAS,GAAG,CAAC,OAAyB,EAAE,EAAE;IACrD,MAAM,EAAE,IAAI,EAAE,cAAc,EAAE,IAAI,EAAE,GAAG,OAAO,CAAC;IAE/C,OAAO;QACL,YAAY,EAAE,UAAU;QACxB,OAAO,EAAE;WACF,IAAI,cAAc,IAAI;CAChC;KACE,CAAC;AACJ,CAAC,CAAC;AATW,QAAA,SAAS,aASpB"}

@@ -1,0 +1,1 @@
+[{"name":"","description":"The page for a project's top level AND for any card at any depth — the same\nlayout repeats all the way down. Shows the cards inside (as tiles) and the\ntasks inside (as a checklist), with buttons to add more of either.","args":[],"returns":{},"access":"public","examples":[],"render":"","properties":[],"static":false,"filePath":"card-page.tsx"}]

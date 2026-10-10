@@ -1,0 +1,1 @@
+[{"filePath":"project-tabs.tsx","name":"ProjectHeader","description":"Header shared by the project frames: name, overall %, and Overview/Checklist tabs.","properties":[{"name":"project","description":"","required":true,"type":"Project"}],"access":"public","methods":[],"args":[],"examples":[]}]

@@ -1,0 +1,73 @@
+import mongoose, { Schema } from 'mongoose';
+import type { Project, ProjectInput } from './project-type.js';
+
+const projectSchema = new Schema(
+  {
+    name: { type: String, required: true },
+    description: { type: String, default: '' },
+    color: { type: String, default: '#7c5cff' },
+    logo: { type: String, default: '' },
+    // recursive task tree stored as a nested document
+    tasks: { type: Schema.Types.Mixed, default: [] },
+  },
+  { timestamps: true, minimize: false }
+);
+
+const ProjectModel = (mongoose.models.Project ||
+  mongoose.model('Project', projectSchema)) as mongoose.Model<any>;
+
+function toProject(doc: any): Project {
+  return {
+    id: String(doc._id),
+    name: doc.name,
+    description: doc.description,
+    color: doc.color,
+    logo: doc.logo || '',
+    tasks: doc.tasks || [],
+    createdAt: doc.createdAt?.toISOString?.(),
+    updatedAt: doc.updatedAt?.toISOString?.(),
+  };
+}
+
+/**
+ * Data access for projects, backed by MongoDB.
+ */
+export class ProjectRepository {
+  /** Lists all projects, oldest first. */
+  async list(): Promise<Project[]> {
+    const docs = await ProjectModel.find().sort({ createdAt: 1 }).lean();
+    return docs.map(toProject);
+  }
+
+  /** Gets a project by id, or null. */
+  async get(id: string): Promise<Project | null> {
+    if (!mongoose.isValidObjectId(id)) return null;
+    const doc = await ProjectModel.findById(id).lean();
+    return doc ? toProject(doc) : null;
+  }
+
+  /** Creates a project. */
+  async create(input: ProjectInput): Promise<Project> {
+    const doc = await ProjectModel.create(input);
+    return toProject(doc.toObject());
+  }
+
+  /** Updates a project's editable fields (including its whole task tree). */
+  async update(id: string, input: Partial<ProjectInput>): Promise<Project | null> {
+    if (!mongoose.isValidObjectId(id)) return null;
+    const doc = await ProjectModel.findByIdAndUpdate(id, input, { new: true }).lean();
+    return doc ? toProject(doc) : null;
+  }
+
+  /** Deletes a project. Returns true if something was removed. */
+  async remove(id: string): Promise<boolean> {
+    if (!mongoose.isValidObjectId(id)) return false;
+    const res = await ProjectModel.findByIdAndDelete(id);
+    return Boolean(res);
+  }
+
+  /** Number of stored projects. */
+  async count(): Promise<number> {
+    return ProjectModel.countDocuments();
+  }
+}

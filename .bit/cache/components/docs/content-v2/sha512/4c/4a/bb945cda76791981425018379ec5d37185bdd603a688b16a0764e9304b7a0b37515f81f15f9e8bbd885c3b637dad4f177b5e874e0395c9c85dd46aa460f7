@@ -1,0 +1,1 @@
+[{"name":"","description":"Stores uploaded pictures (project logos and card covers) in MongoDB,\nkept apart from projects so project payloads stay small.","args":[],"returns":{},"access":"public","examples":[],"render":"","properties":[],"static":false,"filePath":"image-repository.ts"}]

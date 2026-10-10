@@ -1,0 +1,1 @@
+{"version":3,"file":"component.js","sourceRoot":"","sources":["../../../hook-template/files/component.ts"],"names":[],"mappings":";;;AAEO,MAAM,aAAa,GAAG,CAAC,OAAyB,EAAE,EAAE;IACzD,MAAM,EAAE,IAAI,EAAE,aAAa,EAAE,GAAG,OAAO,CAAC;IACxC,OAAO;QACL,YAAY,EAAE,GAAG,IAAI,KAAK;QAC1B,OAAO,EAAE;;;OAGN,OAAO,CAAC,aAAa;;kBAEV,aAAa;;;;;;;;;CAS9B;KACE,CAAC;AACJ,CAAC,CAAC;AApBW,QAAA,aAAa,iBAoBxB"}

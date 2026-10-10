@@ -1,0 +1,8 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.getSpecifierValueForImportDeclaration = exports.getDependenciesFromCallExpression = exports.getDependenciesFromMemberExpression = void 0;
+var parser_helper_1 = require("./parser-helper");
+Object.defineProperty(exports, "getDependenciesFromMemberExpression", { enumerable: true, get: function () { return parser_helper_1.getDependenciesFromMemberExpression; } });
+Object.defineProperty(exports, "getDependenciesFromCallExpression", { enumerable: true, get: function () { return parser_helper_1.getDependenciesFromCallExpression; } });
+Object.defineProperty(exports, "getSpecifierValueForImportDeclaration", { enumerable: true, get: function () { return parser_helper_1.getSpecifierValueForImportDeclaration; } });
+//# sourceMappingURL=index.js.map

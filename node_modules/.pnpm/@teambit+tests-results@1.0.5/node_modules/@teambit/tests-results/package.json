@@ -1,0 +1,40 @@
+{
+  "name": "@teambit/tests-results",
+  "version": "1.0.5",
+  "homepage": "https://bit.cloud/teambit/defender/tests-results",
+  "main": "dist/index.js",
+  "componentId": {
+    "scope": "teambit.defender",
+    "name": "tests-results",
+    "version": "1.0.5"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "26.0.20",
+    "@types/node": "12.20.4",
+    "@babel/runtime": "7.20.0"
+  },
+  "peerDependencies": {},
+  "license": "Apache-2.0",
+  "optionalDependencies": {},
+  "peerDependenciesMeta": {},
+  "private": false,
+  "engines": {
+    "node": ">=12.22.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/teambit/bit"
+  },
+  "keywords": [
+    "bit",
+    "bit-aspect",
+    "components",
+    "collaboration",
+    "web",
+    "react",
+    "react-components",
+    "angular",
+    "angular-components"
+  ]
+}

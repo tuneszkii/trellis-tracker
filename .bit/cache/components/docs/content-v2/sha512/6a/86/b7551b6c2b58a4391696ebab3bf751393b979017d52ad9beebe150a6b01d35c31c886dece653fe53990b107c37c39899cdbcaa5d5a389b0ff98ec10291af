@@ -1,0 +1,1 @@
+[{"name":"","description":"Project settings frame: rename, describe, recolor (live preview of the\nwhole project theme), change the logo, or delete the project.","args":[],"returns":{},"access":"public","examples":[],"render":"","properties":[],"static":false,"filePath":"settings-page.tsx"}]

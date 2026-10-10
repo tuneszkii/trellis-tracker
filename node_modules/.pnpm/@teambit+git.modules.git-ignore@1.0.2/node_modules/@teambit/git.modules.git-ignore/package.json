@@ -1,0 +1,20 @@
+{
+  "name": "@teambit/git.modules.git-ignore",
+  "version": "1.0.2",
+  "homepage": "https://bit.cloud/teambit/git/modules/git-ignore",
+  "main": "dist/index.js",
+  "componentId": {
+    "scope": "teambit.git",
+    "name": "modules/git-ignore",
+    "version": "1.0.2"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "26.0.20",
+    "@types/node": "12.20.4",
+    "@babel/runtime": "7.20.0",
+    "@teambit/node.node": "1.0.28"
+  },
+  "peerDependencies": {},
+  "license": "SEE LICENSE IN LICENSE"
+}

@@ -1,0 +1,38 @@
+{
+  "name": "@teambit/bit-error",
+  "version": "0.0.404",
+  "homepage": "https://bit.cloud/teambit/harmony/bit-error",
+  "main": "dist/index.js",
+  "componentId": {
+    "scope": "teambit.harmony",
+    "name": "bit-error",
+    "version": "0.0.404"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "26.0.20",
+    "@types/node": "12.20.4",
+    "@babel/runtime": "7.20.0"
+  },
+  "peerDependencies": {},
+  "license": "Apache-2.0",
+  "private": false,
+  "engines": {
+    "node": ">=12.22.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/teambit/bit"
+  },
+  "keywords": [
+    "bit",
+    "bit-aspect",
+    "components",
+    "collaboration",
+    "web",
+    "react",
+    "react-components",
+    "angular",
+    "angular-components"
+  ]
+}

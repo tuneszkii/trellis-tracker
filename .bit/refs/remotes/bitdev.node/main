@@ -1,0 +1,16 @@
+[
+  {
+    "id": {
+      "scope": "bitdev.node",
+      "name": "node-env"
+    },
+    "head": "b24ff7564f1d87cfe323723adf76c93036c5d7c0"
+  },
+  {
+    "id": {
+      "scope": "bitdev.node",
+      "name": "node-server"
+    },
+    "head": "26a3d0d004a369c0399bee5931d37d622d297f10"
+  }
+]

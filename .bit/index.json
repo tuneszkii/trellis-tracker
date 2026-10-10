@@ -1,0 +1,69 @@
+{
+  "components": [
+    {
+      "id": {
+        "scope": "bitdev.node",
+        "name": "node-env"
+      },
+      "isSymlink": false,
+      "hash": "ca06bbbbe1eefa9afb10aeb40fd66d33d9477d7e"
+    },
+    {
+      "id": {
+        "scope": "bitdev.react",
+        "name": "react-env"
+      },
+      "isSymlink": false,
+      "hash": "332d61722e10572fbaef5995407ebdce773c6a7e"
+    },
+    {
+      "id": {
+        "scope": "bitdev.platforms",
+        "name": "examples/placeholder-service"
+      },
+      "isSymlink": false,
+      "hash": "6d96f398562208c930ba7eff4c92d937b906194b"
+    },
+    {
+      "id": {
+        "scope": "bitdev.platforms",
+        "name": "backend/gateway-server"
+      },
+      "isSymlink": false,
+      "hash": "1547bfb70aacb3fdc11449388fd73ffc164a00e9"
+    },
+    {
+      "id": {
+        "scope": "bitdev.platforms",
+        "name": "examples/placeholder-frontend"
+      },
+      "isSymlink": false,
+      "hash": "2bccd4e039889e3d2576d5fe43e368aaa9b9a9d4"
+    },
+    {
+      "id": {
+        "scope": "bitdev.react",
+        "name": "app-types/vite-react"
+      },
+      "isSymlink": false,
+      "hash": "7c7b0e8b950507675eb26a304d7d26defab275a7"
+    },
+    {
+      "id": {
+        "scope": "bitdev.platforms",
+        "name": "platform"
+      },
+      "isSymlink": false,
+      "hash": "efdb657d914858203b6cb626c8530d375cad97d3"
+    },
+    {
+      "id": {
+        "scope": "bitdev.node",
+        "name": "node-server"
+      },
+      "isSymlink": false,
+      "hash": "3d9dfebc8c3985750c7421779af507d52c159d3c"
+    }
+  ],
+  "lanes": []
+}

@@ -1,0 +1,10 @@
+.label {
+  // space between the label and the target
+  // keep this space so users can move their cursor in this space.
+  padding: 8px;
+}
+
+.frame,
+.label {
+  z-index: 15500 // $highlighter-z-index;
+}

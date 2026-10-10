@@ -1,0 +1,1 @@
+[{"name":"","description":"New project frame: name, description, color (the whole page previews it live),\nlogo, and optional starter cards (one per line).","args":[],"returns":{},"access":"public","examples":[],"render":"","properties":[],"static":false,"filePath":"new-project-page.tsx"}]

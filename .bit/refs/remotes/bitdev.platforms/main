@@ -1,0 +1,30 @@
+[
+  {
+    "id": {
+      "scope": "bitdev.platforms",
+      "name": "examples/placeholder-service"
+    },
+    "head": "553b33483d32152b1d64fa02fa855f552e1de5dc"
+  },
+  {
+    "id": {
+      "scope": "bitdev.platforms",
+      "name": "backend/gateway-server"
+    },
+    "head": "bb1988e2f5e1e46090b3522427e966aaaa6c11a7"
+  },
+  {
+    "id": {
+      "scope": "bitdev.platforms",
+      "name": "examples/placeholder-frontend"
+    },
+    "head": "bb20a78b19386620ba05002d63fa66b07b311467"
+  },
+  {
+    "id": {
+      "scope": "bitdev.platforms",
+      "name": "platform"
+    },
+    "head": "ea94b15c3831b4dd54dc2f0a1d503a5a5d01a9ba"
+  }
+]

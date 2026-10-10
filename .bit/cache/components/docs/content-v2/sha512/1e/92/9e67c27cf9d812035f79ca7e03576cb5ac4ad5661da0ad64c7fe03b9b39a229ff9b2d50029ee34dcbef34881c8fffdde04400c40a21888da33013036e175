@@ -1,0 +1,1 @@
+[{"name":"","description":"Loads projects from the trellis service and exposes optimistic mutations.\nEdits apply locally at once and are saved with a short debounce.","args":[],"returns":{"description":"projects, loading/error state and mutation helpers","type":null},"access":"public","examples":[],"render":"","properties":[],"static":false,"filePath":"use-projects.ts"}]

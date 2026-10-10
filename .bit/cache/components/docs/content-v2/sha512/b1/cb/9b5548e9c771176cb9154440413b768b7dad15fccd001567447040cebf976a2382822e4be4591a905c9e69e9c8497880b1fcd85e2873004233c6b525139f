@@ -1,0 +1,1 @@
+[{"name":"","description":"Checklist frame: every checkable task in the project as one flat list,\ngrouped by area, with a Remaining / All / Done filter.","args":[],"returns":{},"access":"public","examples":[],"render":"","properties":[],"static":false,"filePath":"checklist-page.tsx"}]

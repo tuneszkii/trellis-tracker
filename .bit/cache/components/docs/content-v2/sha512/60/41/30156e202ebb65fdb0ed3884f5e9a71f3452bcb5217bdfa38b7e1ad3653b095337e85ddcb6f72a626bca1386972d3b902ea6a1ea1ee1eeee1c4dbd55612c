@@ -1,0 +1,1 @@
+[{"name":"","description":"Dashboard frame — the at-a-glance view across all projects:\nheadline stats, one card per project, and a flat \"Up next\" list.","args":[],"returns":{},"access":"public","examples":[],"render":"","properties":[],"static":false,"filePath":"dashboard-page.tsx"}]

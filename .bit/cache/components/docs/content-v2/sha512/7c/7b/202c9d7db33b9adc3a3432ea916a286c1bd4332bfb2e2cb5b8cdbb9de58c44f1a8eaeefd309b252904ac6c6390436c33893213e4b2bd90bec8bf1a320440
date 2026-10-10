@@ -1,0 +1,1 @@
+[{"name":"","description":"Project overview frame: a stacked bar showing how each area contributes to\nthe project total, then one card per area. Clicking an area opens its focus frame.","args":[],"returns":{},"access":"public","examples":[],"render":"","properties":[],"static":false,"filePath":"project-overview-page.tsx"}]

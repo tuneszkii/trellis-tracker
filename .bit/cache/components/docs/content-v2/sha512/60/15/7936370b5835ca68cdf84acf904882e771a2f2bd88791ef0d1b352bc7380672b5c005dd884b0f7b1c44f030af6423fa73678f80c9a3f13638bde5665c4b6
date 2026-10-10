@@ -1,0 +1,1 @@
+[{"name":"","description":"Checklist frame: every task in the project as one flat list, grouped by\ntop-level card, with a Remaining / All / Done filter. Nested cards appear as\na breadcrumb above each task instead of indentation.","args":[],"returns":{},"access":"public","examples":[],"render":"","properties":[],"static":false,"filePath":"checklist-page.tsx"}]

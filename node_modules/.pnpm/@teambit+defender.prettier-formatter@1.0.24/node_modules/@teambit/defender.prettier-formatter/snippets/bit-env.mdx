@@ -1,0 +1,27 @@
+```ts
+/* your base env. in this example, react-env. */
+import { ReactEnv } from '@teambit/react.react-env';
+
+import { PrettierFormatter } from '@teambit/defender.prettier-formatter';
+
+export class MyEnv extends ReactEnv {
+  name = 'my-env';
+
+  /**
+   * replace the env's default Prettier formatter
+   * (for formatting in development. prettier does not format source files in build)
+   */
+  formatter() {
+    return PrettierFormatter.from({
+      /**
+       * the configuration file to be used by this Prettier formatter
+       */
+      configPath: require.resolve('./config/prettier.config.j'),
+      /* the file types to be formatter by this prettier */
+      extensions: ['.js', '.jsx', '.ts', '.tsx', '.json', '.md'],
+    });
+  }
+}
+
+export default new MyEnv();
+```

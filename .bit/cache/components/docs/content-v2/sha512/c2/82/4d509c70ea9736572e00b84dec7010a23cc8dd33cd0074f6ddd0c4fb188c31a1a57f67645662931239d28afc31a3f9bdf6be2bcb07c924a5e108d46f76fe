@@ -1,0 +1,1 @@
+[{"filePath":"project-banner.tsx","name":"ProjectBanner","description":"Themed header for the project frames: logo, name, overall progress and the\nOverview / Checklist / Settings tabs.","properties":[{"name":"project","description":"","required":true,"type":"Project"}],"access":"public","methods":[],"args":[],"examples":[]}]

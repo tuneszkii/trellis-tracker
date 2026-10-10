@@ -1,0 +1,231 @@
+stdout:
+- running command "create"...
+- importing 1 components to get the env bitdev.react/react-env
+- successfully imported 1 components to get the env bitdev.react/react-env
+- loading 1 component(s)
+- loading 1 component(s)
+- loading 1 component(s)
+- loading 1 component(s)
+- loading 1 component(s)
+- loading 1 component(s)
+- loading 1 component(s)
+- loading 1 component(s)
+- loading 1 component(s)
+  installing dependencies in workspace using pnpm (teambit.dependencies/pnpm)
+- loading 2 component(s)
+- linking components
+✔ linking components (completed in 3ms)
+- loading 2 component(s)
+- loading 2 component(s)
+- deduping dependencies for installation
+✔ deduping dependencies for installation
+- loading 2 component(s)
+- loading 2 component(s)
+- loading 2 component(s)
+- loading 2 component(s)
+- loading 2 component(s)
+- loading 2 component(s)
+- deduping dependencies for installation
+✔ deduping dependencies for installation
+- loading 2 component(s)
+- loading 2 component(s)
+- loading 2 component(s)
+- loading 2 component(s)
+- loading 2 component(s)
+- running pre install subscribers
+✔ running pre install subscribers
+- running package installation using pnpm
+
+[K[0J[1AProgress: resolved 0, reused 1, downloaded 0, added 0
+[K[0J[1AProgress: resolved 0, reused 248, downloaded 0, added 0
+[K[0J[30C[1A7[31D[1B[K[0J[1A[WARN] deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.[0K
+Progress: resolved 0, reused 297, downloaded 2, added 0[0K
+[0K[K[0J[29C[1A480[32D[1B[K[0J[1A[WARN] 13 deprecated subdependencies found: @apollo/server-gateway-interface@1.1.1, @humanwhocodes/config-array@0.13.0, @humanwhocodes/object-schema@2.0.3, glob@10.5.0, glob@7.2.3, inflight@1.0.6, lodash-es@4.18.0, rimraf@3.0.2, user-home@3.0.0, uuid@10.0.0, uuid@8.3.2, uuid@9.0.1, whatwg-encoding@3.1.1[0K
+Progress: resolved 0, reused 504, downloaded 2, added 0[0K
+[0K[K[0J[1AProgress: resolved 318, reused 709, downloaded 2, added 313
+[K[0J[19C[1A600, reused 898, downloaded 2, added 595[59D[1B[K[0J[1AProgress: resolved 800, reused 1031, downloaded 2, added 795
+[K[0J[19C[1A997, reused 1164, downloaded 2, added 992[60D[1B[K[0J[1AProgress: resolved 1313, reused 1383, downloaded 2, added 1308
+[K[0J[20C[1A477, reused 1496, downloaded 2, added 1469[62D[1B[K[0J[1APackages: +1561 -11[0K
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+Progress: resolved 1561, reused 1557, downloaded 2, added 1561
+[K[0J[1AProgress: resolved 1561, reused 1557, downloaded 2, added 1561, done
+[K[0J
+dependencies:
++ @apollo/client 4.3.3
++ @babel/core 7.29.0
++ @bitdev/platforms.backend.gateway-server 1.0.16
++ @bitdev/platforms.examples.placeholder-frontend 0.0.2
++ @bitdev/platforms.examples.placeholder-service 0.0.2
++ @bitdev/platforms.platform 3.0.20
++ @bitdev/react.app-types.vite-react 3.0.16
++ @mdx-js/mdx 3.1.1
++ @mdx-js/react 3.1.1
+- @rspack/core 1.7.12
+- @rspack/dev-server 1.2.1
+- @rspack/plugin-react-refresh 1.6.2
++ @teambit/api-reference link:/home/user/.bvm/links/bit/node_modules/@teambit/api-reference
++ @teambit/api-server link:/home/user/.bvm/links/bit/node_modules/@teambit/api-server
++ @teambit/application link:/home/user/.bvm/links/bit/node_modules/@teambit/application
++ @teambit/aspect link:/home/user/.bvm/links/bit/node_modules/@teambit/aspect
++ @teambit/aspect-loader link:/home/user/.bvm/links/bit/node_modules/@teambit/aspect-loader
++ @teambit/babel link:/home/user/.bvm/links/bit/node_modules/@teambit/babel
++ @teambit/bit link:/home/user/.bvm/links/bit/node_modules/@teambit/bit
++ @teambit/builder link:/home/user/.bvm/links/bit/node_modules/@teambit/builder
++ @teambit/bundler link:/home/user/.bvm/links/bit/node_modules/@teambit/bundler
++ @teambit/cache link:/home/user/.bvm/links/bit/node_modules/@teambit/cache
++ @teambit/changelog link:/home/user/.bvm/links/bit/node_modules/@teambit/changelog
++ @teambit/checkout link:/home/user/.bvm/links/bit/node_modules/@teambit/checkout
++ @teambit/ci link:/home/user/.bvm/links/bit/node_modules/@teambit/ci
++ @teambit/clear-cache link:/home/user/.bvm/links/bit/node_modules/@teambit/clear-cache
++ @teambit/cli link:/home/user/.bvm/links/bit/node_modules/@teambit/cli
++ @teambit/cli-mcp-server link:/home/user/.bvm/links/bit/node_modules/@teambit/cli-mcp-server
++ @teambit/cloud link:/home/user/.bvm/links/bit/node_modules/@teambit/cloud
++ @teambit/code link:/home/user/.bvm/links/bit/node_modules/@teambit/code
++ @teambit/command-bar link:/home/user/.bvm/links/bit/node_modules/@teambit/command-bar
++ @teambit/community link:/home/user/.bvm/links/bit/node_modules/@teambit/community
++ @teambit/compiler link:/home/user/.bvm/links/bit/node_modules/@teambit/compiler
++ @teambit/component link:/home/user/.bvm/links/bit/node_modules/@teambit/component
++ @teambit/component-compare link:/home/user/.bvm/links/bit/node_modules/@teambit/component-compare
++ @teambit/component-log link:/home/user/.bvm/links/bit/node_modules/@teambit/component-log
++ @teambit/component-sizer link:/home/user/.bvm/links/bit/node_modules/@teambit/component-sizer
++ @teambit/component-tree link:/home/user/.bvm/links/bit/node_modules/@teambit/component-tree
++ @teambit/component-writer link:/home/user/.bvm/links/bit/node_modules/@teambit/component-writer
++ @teambit/compositions link:/home/user/.bvm/links/bit/node_modules/@teambit/compositions
++ @teambit/config link:/home/user/.bvm/links/bit/node_modules/@teambit/config
++ @teambit/config-merger link:/home/user/.bvm/links/bit/node_modules/@teambit/config-merger
++ @teambit/config-store link:/home/user/.bvm/links/bit/node_modules/@teambit/config-store
++ @teambit/dependencies link:/home/user/.bvm/links/bit/node_modules/@teambit/dependencies
++ @teambit/dependency-resolver link:/home/user/.bvm/links/bit/node_modules/@teambit/dependency-resolver
++ @teambit/deprecation link:/home/user/.bvm/links/bit/node_modules/@teambit/deprecation
++ @teambit/dev-files link:/home/user/.bvm/links/bit/node_modules/@teambit/dev-files
++ @teambit/diagnostic link:/home/user/.bvm/links/bit/node_modules/@teambit/diagnostic
++ @teambit/docs link:/home/user/.bvm/links/bit/node_modules/@teambit/docs
++ @teambit/doctor link:/home/user/.bvm/links/bit/node_modules/@teambit/doctor
++ @teambit/eject link:/home/user/.bvm/links/bit/node_modules/@teambit/eject
++ @teambit/empty-env link:/home/user/.bvm/links/bit/node_modules/@teambit/empty-env
++ @teambit/env link:/home/user/.bvm/links/bit/node_modules/@teambit/env
++ @teambit/envs link:/home/user/.bvm/links/bit/node_modules/@teambit/envs
++ @teambit/eslint link:/home/user/.bvm/links/bit/node_modules/@teambit/eslint
++ @teambit/export link:/home/user/.bvm/links/bit/node_modules/@teambit/export
++ @teambit/express link:/home/user/.bvm/links/bit/node_modules/@teambit/express
++ @teambit/forking link:/home/user/.bvm/links/bit/node_modules/@teambit/forking
++ @teambit/formatter link:/home/user/.bvm/links/bit/node_modules/@teambit/formatter
++ @teambit/generator link:/home/user/.bvm/links/bit/node_modules/@teambit/generator
++ @teambit/git link:/home/user/.bvm/links/bit/node_modules/@teambit/git
++ @teambit/global-config link:/home/user/.bvm/links/bit/node_modules/@teambit/global-config
++ @teambit/graph link:/home/user/.bvm/links/bit/node_modules/@teambit/graph
++ @teambit/graphql link:/home/user/.bvm/links/bit/node_modules/@teambit/graphql
++ @teambit/harmony link:/home/user/.bvm/links/bit/node_modules/@teambit/harmony
++ @teambit/harmony-ui-app link:/home/user/.bvm/links/bit/node_modules/@teambit/harmony-ui-app
++ @teambit/host-initializer link:/home/user/.bvm/links/bit/node_modules/@teambit/host-initializer
++ @teambit/importer link:/home/user/.bvm/links/bit/node_modules/@teambit/importer
++ @teambit/insights link:/home/user/.bvm/links/bit/node_modules/@teambit/insights
++ @teambit/install link:/home/user/.bvm/links/bit/node_modules/@teambit/install
++ @teambit/internalize link:/home/user/.bvm/links/bit/node_modules/@teambit/internalize
++ @teambit/ipc-events link:/home/user/.bvm/links/bit/node_modules/@teambit/ipc-events
++ @teambit/isolator link:/home/user/.bvm/links/bit/node_modules/@teambit/isolator
++ @teambit/issues link:/home/user/.bvm/links/bit/node_modules/@teambit/issues
++ @teambit/jest link:/home/user/.bvm/links/bit/node_modules/@teambit/jest
++ @teambit/lanes link:/home/user/.bvm/links/bit/node_modules/@teambit/lanes
++ @teambit/legacy link:/home/user/.bvm/links/bit/node_modules/@teambit/legacy
++ @teambit/linter link:/home/user/.bvm/links/bit/node_modules/@teambit/linter
++ @teambit/lister link:/home/user/.bvm/links/bit/node_modules/@teambit/lister
++ @teambit/logger link:/home/user/.bvm/links/bit/node_modules/@teambit/logger
++ @teambit/mdx link:/home/user/.bvm/links/bit/node_modules/@teambit/mdx
++ @teambit/mdx.ui.mdx-scope-context 1.1.1
++ @teambit/merge-lanes link:/home/user/.bvm/links/bit/node_modules/@teambit/merge-lanes
++ @teambit/merging link:/home/user/.bvm/links/bit/node_modules/@teambit/merging
++ @teambit/mocha link:/home/user/.bvm/links/bit/node_modules/@teambit/mocha
++ @teambit/mover link:/home/user/.bvm/links/bit/node_modules/@teambit/mover
++ @teambit/multi-compiler link:/home/user/.bvm/links/bit/node_modules/@teambit/multi-compiler
++ @teambit/multi-tester link:/home/user/.bvm/links/bit/node_modules/@teambit/multi-tester
++ @teambit/new-component-helper link:/home/user/.bvm/links/bit/node_modules/@teambit/new-component-helper
++ @teambit/node link:/home/user/.bvm/links/bit/node_modules/@teambit/node
++ @teambit/notifications link:/home/user/.bvm/links/bit/node_modules/@teambit/notifications
++ @teambit/objects link:/home/user/.bvm/links/bit/node_modules/@teambit/objects
++ @teambit/panels link:/home/user/.bvm/links/bit/node_modules/@teambit/panels
++ @teambit/pkg link:/home/user/.bvm/links/bit/node_modules/@teambit/pkg
++ @teambit/pnpm link:/home/user/.bvm/links/bit/node_modules/@teambit/pnpm
++ @teambit/prettier link:/home/user/.bvm/links/bit/node_modules/@teambit/prettier
++ @teambit/preview link:/home/user/.bvm/links/bit/node_modules/@teambit/preview
++ @teambit/pubsub link:/home/user/.bvm/links/bit/node_modules/@teambit/pubsub
++ @teambit/react link:/home/user/.bvm/links/bit/node_modules/@teambit/react
++ @teambit/react-router link:/home/user/.bvm/links/bit/node_modules/@teambit/react-router
++ @teambit/readme link:/home/user/.bvm/links/bit/node_modules/@teambit/readme
++ @teambit/refactoring link:/home/user/.bvm/links/bit/node_modules/@teambit/refactoring
++ @teambit/remove link:/home/user/.bvm/links/bit/node_modules/@teambit/remove
++ @teambit/renaming link:/home/user/.bvm/links/bit/node_modules/@teambit/renaming
++ @teambit/ripple link:/home/user/.bvm/links/bit/node_modules/@teambit/ripple
++ @teambit/schema link:/home/user/.bvm/links/bit/node_modules/@teambit/schema
++ @teambit/scope link:/home/user/.bvm/links/bit/node_modules/@teambit/scope
++ @teambit/scripts link:/home/user/.bvm/links/bit/node_modules/@teambit/scripts
++ @teambit/sidebar link:/home/user/.bvm/links/bit/node_modules/@teambit/sidebar
++ @teambit/snapping link:/home/user/.bvm/links/bit/node_modules/@teambit/snapping
++ @teambit/stash link:/home/user/.bvm/links/bit/node_modules/@teambit/stash
++ @teambit/status link:/home/user/.bvm/links/bit/node_modules/@teambit/status
++ @teambit/tester link:/home/user/.bvm/links/bit/node_modules/@teambit/tester
++ @teambit/tracker link:/home/user/.bvm/links/bit/node_modules/@teambit/tracker
++ @teambit/typescript link:/home/user/.bvm/links/bit/node_modules/@teambit/typescript
++ @teambit/ui link:/home/user/.bvm/links/bit/node_modules/@teambit/ui
++ @teambit/user-agent link:/home/user/.bvm/links/bit/node_modules/@teambit/user-agent
++ @teambit/validator link:/home/user/.bvm/links/bit/node_modules/@teambit/validator
++ @teambit/variants link:/home/user/.bvm/links/bit/node_modules/@teambit/variants
++ @teambit/version-history link:/home/user/.bvm/links/bit/node_modules/@teambit/version-history
++ @teambit/vue-aspect link:/home/user/.bvm/links/bit/node_modules/@teambit/vue-aspect
++ @teambit/watcher link:/home/user/.bvm/links/bit/node_modules/@teambit/watcher
++ @teambit/webpack link:/home/user/.bvm/links/bit/node_modules/@teambit/webpack
++ @teambit/worker link:/home/user/.bvm/links/bit/node_modules/@teambit/worker
++ @teambit/workspace link:/home/user/.bvm/links/bit/node_modules/@teambit/workspace
++ @teambit/workspace-config-files link:/home/user/.bvm/links/bit/node_modules/@teambit/workspace-config-files
++ @teambit/yarn link:/home/user/.bvm/links/bit/node_modules/@teambit/yarn
++ @testing-library/dom 10.4.1
++ @testing-library/jest-dom 6.9.1
++ @types/find-root 1.1.4
++ @types/node 22.13.14
++ @types/react 19.2.14
++ @types/react-dom 19.2.3
++ @vitejs/plugin-react 5.2.0
++ @vitest/coverage-istanbul 4.1.11
++ browserslist 4.28.1
++ graphql 16.14.2
++ jsdom 29.1.1
++ oxlint 1.55.0
++ oxlint-tsgolint 0.17.0
++ react 19.2.4
++ react-dom 19.2.4
++ react-router 7.18.4
++ react-router-dom 7.18.4
++ sass 1.98.0
++ sass-loader 16.0.8
++ vite 8.3.4
+
+devDependencies:
++ @bitdev/react.react-env 6.0.32
+[K[0J✔ done running package installation using pnpm (completed in 5s)
+- running post install subscribers
+✔ running post install subscribers
+- loading 2 component(s)
+- loading 1 component(s)
+- compiling components
+- loading 2 component(s)
+- loading 2 component(s)
+- loading 2 component(s)
+- loading 2 component(s)
+✔ compiling components (completed in 362ms)
+- loading 2 component(s)
+- loading 1 component(s)
+- loading 1 component(s)
+- loading 2 component(s)
+- loading 1 component(s)
+- loading 1 component(s)
+- loading 2 component(s)
+- loading 1 component(s)
+- loading 1 component(s)
+✔ 1 component(s) were created
+
+   › tuneszkiiii25.trellis/trellis-app
+      location: trellis/trellis-app
+      env:      bitdev.react/react-env@6.0.32 (set by template)
+      package:  @tuneszkiiii25/trellis.trellis-app
+
+env configuration is according to workspace variants, template config or --env flag.

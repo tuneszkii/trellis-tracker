@@ -1,0 +1,165 @@
+"use strict";
+const betterPathResolve = require("better-path-resolve");
+const fs_1 = require("fs");
+const pathLib = require("path");
+const renameOverwrite = require("rename-overwrite");
+const IS_WINDOWS = process.platform === 'win32' || /^(msys|cygwin)$/.test(process.env.OSTYPE);
+// Always use "junctions" on Windows. Even though support for "symbolic links" was added in Vista+, users by default
+// lack permission to create them
+const symlinkType = IS_WINDOWS ? 'junction' : 'dir';
+const resolveSrc = IS_WINDOWS ? resolveSrcOnWin : resolveSrcOnNonWin;
+function resolveSrcOnWin(src, dest) {
+    return `${src}\\`;
+}
+function resolveSrcOnNonWin(src, dest) {
+    return pathLib.relative(pathLib.dirname(dest), src);
+}
+function symlinkDir(target, path, opts) {
+    path = betterPathResolve(path);
+    target = betterPathResolve(target);
+    if (target === path)
+        throw new Error(`Symlink path is the same as the target path (${target})`);
+    target = resolveSrc(target, path);
+    return forceSymlink(target, path, opts);
+}
+/**
+ * Creates a symlink. Re-link if a symlink already exists at the supplied
+ * srcPath. API compatible with [`fs#symlink`](https://nodejs.org/api/fs.html#fs_fs_symlink_srcpath_dstpath_type_callback).
+ */
+async function forceSymlink(target, path, opts) {
+    try {
+        await fs_1.promises.symlink(target, path, symlinkType);
+        return { reused: false };
+    }
+    catch (err) {
+        switch (err.code) {
+            case 'ENOENT':
+                try {
+                    await fs_1.promises.mkdir(pathLib.dirname(path), { recursive: true });
+                }
+                catch (mkdirError) {
+                    mkdirError.message = `Error while trying to symlink "${target}" to "${path}". ` +
+                        `The error happened while trying to create the parent directory for the symlink target. ` +
+                        `Details: ${mkdirError}`;
+                    throw mkdirError;
+                }
+                await forceSymlink(target, path, opts);
+                return { reused: false };
+            case 'EEXIST':
+            case 'EISDIR':
+                if ((opts === null || opts === void 0 ? void 0 : opts.overwrite) === false) {
+                    throw err;
+                }
+                // If the target file already exists then we proceed.
+                // Additional checks are done below.
+                break;
+            default:
+                throw err;
+        }
+    }
+    let linkString;
+    try {
+        linkString = await fs_1.promises.readlink(path);
+    }
+    catch (err) {
+        // path is not a link
+        const parentDir = pathLib.dirname(path);
+        let warn;
+        if (opts === null || opts === void 0 ? void 0 : opts.renameTried) {
+            // This is needed in order to fix a mysterious bug that sometimes happens on macOS.
+            // It is hard to reproduce and is described here: https://github.com/pnpm/pnpm/issues/5909#issuecomment-1400066890
+            await fs_1.promises.unlink(path);
+            warn = `Symlink wanted name was occupied by directory or file. Old entity removed: "${parentDir}${pathLib.sep}{${pathLib.basename(path)}".`;
+        }
+        else {
+            const ignore = `.ignored_${pathLib.basename(path)}`;
+            await renameOverwrite(path, pathLib.join(parentDir, ignore));
+            warn = `Symlink wanted name was occupied by directory or file. Old entity moved: "${parentDir}${pathLib.sep}{${pathLib.basename(path)} => ${ignore}".`;
+        }
+        return {
+            ...await forceSymlink(target, path, { ...opts, renameTried: true }),
+            warn,
+        };
+    }
+    if (target === linkString) {
+        return { reused: true };
+    }
+    await fs_1.promises.unlink(path);
+    return await forceSymlink(target, path, opts);
+}
+// for backward compatibility
+symlinkDir['default'] = symlinkDir;
+(function (symlinkDir) {
+    function sync(target, path, opts) {
+        path = betterPathResolve(path);
+        target = betterPathResolve(target);
+        if (target === path)
+            throw new Error(`Symlink path is the same as the target path (${target})`);
+        target = resolveSrc(target, path);
+        return forceSymlinkSync(target, path, opts);
+    }
+    symlinkDir.sync = sync;
+})(symlinkDir || (symlinkDir = {}));
+function forceSymlinkSync(target, path, opts) {
+    try {
+        (0, fs_1.symlinkSync)(target, path, symlinkType);
+        return { reused: false };
+    }
+    catch (err) {
+        switch (err.code) {
+            case 'ENOENT':
+                try {
+                    (0, fs_1.mkdirSync)(pathLib.dirname(path), { recursive: true });
+                }
+                catch (mkdirError) {
+                    mkdirError.message = `Error while trying to symlink "${target}" to "${path}". ` +
+                        `The error happened while trying to create the parent directory for the symlink target. ` +
+                        `Details: ${mkdirError}`;
+                    throw mkdirError;
+                }
+                forceSymlinkSync(target, path, opts);
+                return { reused: false };
+            case 'EEXIST':
+            case 'EISDIR':
+                if ((opts === null || opts === void 0 ? void 0 : opts.overwrite) === false) {
+                    throw err;
+                }
+                // If the target file already exists then we proceed.
+                // Additional checks are done below.
+                break;
+            default:
+                throw err;
+        }
+    }
+    let linkString;
+    try {
+        linkString = (0, fs_1.readlinkSync)(path);
+    }
+    catch (err) {
+        // path is not a link
+        const parentDir = pathLib.dirname(path);
+        let warn;
+        if (opts === null || opts === void 0 ? void 0 : opts.renameTried) {
+            // This is needed in order to fix a mysterious bug that sometimes happens on macOS.
+            // It is hard to reproduce and is described here: https://github.com/pnpm/pnpm/issues/5909#issuecomment-1400066890
+            (0, fs_1.unlinkSync)(path);
+            warn = `Symlink wanted name was occupied by directory or file. Old entity removed: "${parentDir}${pathLib.sep}{${pathLib.basename(path)}".`;
+        }
+        else {
+            const ignore = `.ignored_${pathLib.basename(path)}`;
+            renameOverwrite.sync(path, pathLib.join(parentDir, ignore));
+            warn = `Symlink wanted name was occupied by directory or file. Old entity moved: "${parentDir}${pathLib.sep}{${pathLib.basename(path)} => ${ignore}".`;
+        }
+        return {
+            ...forceSymlinkSync(target, path, { ...opts, renameTried: true }),
+            warn,
+        };
+    }
+    if (target === linkString) {
+        return { reused: true };
+    }
+    (0, fs_1.unlinkSync)(path);
+    return forceSymlinkSync(target, path, opts);
+}
+module.exports = symlinkDir;
+//# sourceMappingURL=index.js.map
